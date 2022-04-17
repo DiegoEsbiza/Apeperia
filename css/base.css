@@ -1,5 +1,5 @@
-:root{ 
-    --variable:valor;
+:root {
+    --variable: valor;
     --background-llamada-mobile: #00161C;
     --background-blanco: #FFFFFF;
     --background-azul-claro: #DFE3F5;
@@ -20,20 +20,20 @@
     --fuente-enlace: #0006FF;
 
     --background-footer: #333333;
-    --montserrat: "Montserrat", sanz-serif;
-    --open-sanz: "Open sanz", sanz-serif;
+    --montserrat: "Montserrat", sans-serif;
+    --open-sans: "Open sans", sans-serif;
 }
 
-body{
-    font-family: var(--open-sanz);
+body {
+    font-family: var(--open-sans);
 }
 
-.container{
+.container {
     padding-right: 6%;
     padding-left: 6%;
 }
 
-.boton{
+.boton {
     text-align: center;
     display: block;
     width: 100%;
@@ -42,4 +42,11 @@ body{
     padding: 1rem 2rem;
     border: 1px solid var(--boton-rojo);
     border-radius: 5px;
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        padding-left: calc((100% - 940px)/2);
+        padding-right: calc((100% - 940px)/2);
+    }
 }
